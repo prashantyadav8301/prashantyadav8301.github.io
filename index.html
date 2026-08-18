@@ -115,6 +115,14 @@
     .proj-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.4rem; }
     .proj-card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 1.8rem; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
     .proj-card:hover { border-color: var(--accent2); transform: translateY(-4px); }
+    .proj-card.featured { grid-column: 1 / -1; border-color: rgba(0,212,255,0.45); background: linear-gradient(135deg, rgba(0,212,255,0.08), var(--card) 42%); }
+    .proj-card.featured:hover { border-color: var(--accent); }
+    .proj-badge { font-family: var(--mono); font-size: 0.68rem; color: var(--bg); background: var(--accent); padding: 0.2rem 0.55rem; border-radius: 4px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .proj-highlight { font-size: 0.92rem; color: var(--text2); max-width: 820px; margin-bottom: 1rem; }
+    .proj-highlight strong { color: var(--text); }
+    .proj-repo { align-self: flex-start; margin-top: 1.15rem; font-family: var(--mono); font-size: 0.72rem; color: var(--accent); text-decoration: none; }
+    .proj-repo:hover { color: var(--accent2); text-decoration: underline; }
+    .proj-repo-links { display: flex; flex-wrap: wrap; gap: 1rem; }
     .proj-top { display: flex; justify-content: space-between; margin-bottom: 0.7rem; }
     .proj-icon { font-size: 1.7rem; }
     .proj-date { font-family: var(--mono); font-size: 0.7rem; color: var(--text3); }
@@ -183,7 +191,7 @@
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
   <div class="hero-inner">
-    <div class="hero-tag">PHP / Full-Stack Developer · Noida, India</div>
+    <div class="hero-tag">PHP / Full-Stack Developer · Gr. Noida West, India</div>
     <h1><span class="dim">Hi, I'm</span><br><span class="accent">Prashant</span> Yadav</h1>
     <p class="hero-sub">I build <strong>scalable web applications</strong> — clean code, real impact, production-grade delivery. 3.5+ years shipping features in SaaS and product companies.</p>
     <div class="hero-stats">
@@ -205,13 +213,13 @@
   <h2>Who I <em>Am</em></h2>
   <div class="about-grid fi">
     <div class="about-text">
-      <p>I'm a <strong>Full-Stack PHP Developer</strong> based in Noida, India, with 3.5+ years of experience building and shipping web applications across the complete development lifecycle.</p>
+      <p>I'm a <strong>Full-Stack PHP Developer</strong> based in Gr. Noida West, India, with 3.5+ years of experience building and shipping web applications across the complete development lifecycle.</p>
       <p>At <strong>Telgoo5 Inc.</strong> — a cloud SaaS company serving global telecom operators — I was handpicked as the <strong>sole fresher</strong> to work with senior engineers on a critical <strong>PHP 5 → PHP 8 production migration</strong>. I also owned full lifecycle development of the <strong>Plan Config module</strong>, a core feature used by clients worldwide.</p>
       <p>At <strong>Ideasand.com Technologies</strong>, I built product features end-to-end, designed <strong>CMD Setup</strong> (a no-code XML-driven tool), and worked across the full stack — from optimized SQL to responsive Bootstrap UIs.</p>
       <p>I'm currently deepening my expertise in <strong>Laravel</strong> and exploring <strong>ReactJS</strong>. I value clean code, meaningful products, and continuous technical growth.</p>
     </div>
     <div class="about-meta">
-      <div class="meta-row"><span class="mi">📍</span><div><div class="ml">Location</div><div class="mv">Noida, India</div></div></div>
+      <div class="meta-row"><span class="mi">📍</span><div><div class="ml">Location</div><div class="mv">Gr. Noida West, India</div></div></div>
       <div class="meta-row"><span class="mi">✉️</span><div><div class="ml">Email</div><div class="mv"><a href="mailto:prashant123.iimt@gmail.com">prashant123.iimt@gmail.com</a></div></div></div>
       <div class="meta-row"><span class="mi">📞</span><div><div class="ml">Phone</div><div class="mv">+91 9319218301</div></div></div>
       <div class="meta-row"><span class="mi">💼</span><div><div class="ml">LinkedIn</div><div class="mv"><a href="https://linkedin.com/in/prashantyadav8301" target="_blank">prashantyadav8301</a></div></div></div>
@@ -226,11 +234,11 @@
     <div class="sec-label">02 / skills</div>
     <h2>Tech <em>Stack</em></h2>
     <div class="skills-grid fi">
-      <div class="sg"><div class="sg-title">Backend</div><div class="tags"><span class="tag">Core PHP</span><span class="tag">OOPs</span><span class="tag">REST APIs</span><span class="tag">cURL</span><span class="tag">MVC</span><span class="tag">JSON</span><span class="tag">XML</span></div></div>
-      <div class="sg"><div class="sg-title">Framework</div><div class="tags"><span class="tag">Laravel</span></div></div>
-      <div class="sg"><div class="sg-title">Database</div><div class="tags"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">Query Optimization</span></div></div>
-      <div class="sg"><div class="sg-title">Frontend</div><div class="tags"><span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">Ajax</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap 5</span><span class="tag">Tailwind CSS</span><span class="tag">ReactJS</span></div></div>
-      <div class="sg"><div class="sg-title">Tools</div><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">SVN</span><span class="tag">Postman</span><span class="tag">Jira</span><span class="tag">VS Code</span></div></div>
+      <div class="sg"><div class="sg-title">Languages</div><div class="tags"><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">SQL</span></div></div>
+      <div class="sg"><div class="sg-title">Backend</div><div class="tags"><span class="tag">Core PHP</span><span class="tag">OOP</span><span class="tag">MVC</span><span class="tag">Laravel</span><span class="tag">REST APIs</span><span class="tag">AJAX</span><span class="tag">cURL</span></div></div>
+      <div class="sg"><div class="sg-title">Database</div><div class="tags"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span></div></div>
+      <div class="sg"><div class="sg-title">Frontend</div><div class="tags"><span class="tag">JavaScript</span><span class="tag">jQuery</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap</span><span class="tag">Tailwind CSS</span><span class="tag">React</span></div></div>
+      <div class="sg"><div class="sg-title">Tools</div><div class="tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">SVN</span><span class="tag">Postman</span><span class="tag">Jira</span><span class="tag">Composer</span><span class="tag">VS Code</span></div></div>
     </div>
   </div>
 </div>
@@ -285,6 +293,48 @@
     <div class="sec-label">04 / projects</div>
     <h2>Personal <em>Projects</em></h2>
     <div class="proj-grid fi">
+      <div class="proj-card featured">
+        <div class="proj-top"><div class="proj-icon">&#128197;</div><div class="proj-date">Jul 2026</div></div>
+        <div class="proj-name">Multi-Tenant Service Booking Platform</div>
+        <p class="proj-highlight"><strong>Laravel 12 booking platform</strong> where multiple businesses manage services and customers discover, schedule, and manage appointments through secure role-based workflows.</p>
+        <ul class="proj-desc">
+          <li>Built multi-tenant architecture with isolated business-owner access and Super Admin, Owner, and Customer authorization.</li>
+          <li>Developed business and service CRUD modules with pricing, duration, descriptions, and active/inactive availability.</li>
+          <li>Implemented appointment booking with status lifecycle: <strong>Pending, Confirmed, Completed, and Cancelled</strong>.</li>
+          <li>Prevented overlapping appointments using database-side time-slot conflict detection; cancelled slots become available again.</li>
+          <li>Designed PostgreSQL relationships and RESTful workflows using Eloquent ORM, validation, mass-assignment protection, and cascading foreign keys.</li>
+        </ul>
+        <div class="ptags"><span class="ptag">Laravel 12</span><span class="ptag">PHP 8.2+</span><span class="ptag">PostgreSQL</span><span class="ptag">Blade</span><span class="ptag">Laravel Breeze</span><span class="ptag">Eloquent ORM</span><span class="ptag">RBAC</span></div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top"><div class="proj-icon">&#128230;</div><div class="proj-date">Jun 2026</div></div>
+        <div class="proj-name">Inventory Management System</div>
+        <p class="proj-highlight">Role-based inventory platform for managing products, stock, suppliers, low-stock alerts, and transaction reports.</p>
+        <ul class="proj-desc">
+          <li>Implemented Admin and Staff workflows with custom middleware and least-privilege access.</li>
+          <li>Built Ajax product search and category filtering without page reloads.</li>
+          <li>Handled stock in/out operations atomically with <strong>DB::transaction()</strong> to keep quantities and transaction logs consistent.</li>
+          <li>Added configurable low-stock alerts, date-range reports, CSV export, pagination, and friendly foreign-key error handling.</li>
+        </ul>
+        <div class="ptags"><span class="ptag">Laravel 12</span><span class="ptag">PHP 8.2</span><span class="ptag">PostgreSQL</span><span class="ptag">Tailwind CSS 4</span><span class="ptag">Alpine.js</span><span class="ptag">Fetch API</span><span class="ptag">Breeze</span></div>
+        <a class="proj-repo" href="https://github.com/prashantyadav8301/inventory-app" target="_blank" rel="noopener noreferrer">View repository &#8599;</a>
+      </div>
+      <div class="proj-card">
+        <div class="proj-top"><div class="proj-icon">&#128722;</div><div class="proj-date">Jun 2026</div></div>
+        <div class="proj-name">Mini E-commerce REST API</div>
+        <p class="proj-highlight">Stateless Laravel API with Sanctum authentication, product and cart management, and stock-aware order processing—paired with a standalone Vanilla JS frontend.</p>
+        <ul class="proj-desc">
+          <li>Built RESTful JSON endpoints for authentication, products, carts, orders, order history, and cancellation.</li>
+          <li>Implemented Sanctum bearer-token authentication and a standalone Vanilla JS frontend using Fetch API and localStorage.</li>
+          <li>Validated stock at checkout, restored stock on cancellation, and saved price snapshots for accurate order history.</li>
+          <li>Used atomic order creation, proper HTTP status codes, validation responses, CORS configuration, and a Postman collection.</li>
+        </ul>
+        <div class="ptags"><span class="ptag">Laravel 12</span><span class="ptag">PHP 8.2</span><span class="ptag">PostgreSQL</span><span class="ptag">Sanctum</span><span class="ptag">REST API</span><span class="ptag">Vanilla JS</span><span class="ptag">Postman</span></div>
+        <div class="proj-repo-links">
+          <a class="proj-repo" href="https://github.com/prashantyadav8301/mini-ecommerce-api" target="_blank" rel="noopener noreferrer">View API repository &#8599;</a>
+          <a class="proj-repo" href="https://github.com/prashantyadav8301/mini-ecommerce-frontend" target="_blank" rel="noopener noreferrer">View frontend repository &#8599;</a>
+        </div>
+      </div>
       <div class="proj-card">
         <div class="proj-top"><div class="proj-icon">📝</div><div class="proj-date">Apr 2026</div></div>
         <div class="proj-name">Laravel Blog Application</div>
